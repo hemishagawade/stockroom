@@ -51,4 +51,3 @@ A polished Laravel MVC inventory website for managing material categories, openi
 
 Run the automated feature tests with `php artisan test`. Tests use an in-memory SQLite database and do not require a running MySQL server.
 
-**Time taken to complete:** approximately 30 minutes.
