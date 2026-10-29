@@ -48,6 +48,13 @@
     </div>
     @stack('scripts')
     <script>
+        // Prevent mouse-wheel scrolling from changing a focused quantity field.
+        document.querySelectorAll('input[type="number"]').forEach((input) => {
+            input.addEventListener('wheel', (event) => {
+                if (document.activeElement === input) event.preventDefault();
+            }, { passive: false });
+        });
+
         // Add immediate field feedback while Laravel remains responsible for authoritative validation.
         document.querySelectorAll('form[data-validate]').forEach((form) => {
             let showValidation = form.dataset.hasErrors === 'true';

@@ -199,6 +199,9 @@ tbody tr:hover { background: #fcfdfb; }
 .required { color: #c8705f; }
 .field-label { display: block; margin: 17px 0 7px; color: #4c5850; font-size: 11px; font-weight: 600; }
 input, select { width: 100%; min-height: 39px; padding: 0 11px; border: 1px solid #e1e6e1; border-radius: 5px; outline: none; color: #39453d; background-color: white; font-size: 12px; }
+input[type="number"] { appearance: textfield; -moz-appearance: textfield; }
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button { margin: 0; -webkit-appearance: none; }
 input::placeholder { color: #b0b8b2; }
 input:focus, select:focus { border-color: #8aae96; box-shadow: 0 0 0 3px rgba(90, 142, 106, .11); }
 select { cursor: pointer; }
